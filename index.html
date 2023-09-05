@@ -22,13 +22,14 @@
     <div id="preloder"
         class="min-vh-100 w-100 bg_ornge d-flex align-items-center justify-content-center z-3 top-0  position-fixed">
 
-        <img class="" src="./assets/image/svg/navicon.svg" alt="navicon">
+        <img class="animation" src="./assets/image/svg/navicon.svg" alt="navicon">
     </div>
-    <header class="min-vh-100 flex-grow-0">
+
+        <header class="min-vh-100 flex-grow-1">
         <nav class="container ">
             <div class="d-flex align-items-center justify-content-between p-3">
                 <div>
-                    <img src="./assets/image/svg/navicon.svg" alt="#">
+                    <a href=""> <img src="./assets/image/svg/navicon.svg" alt="#"></a>
                 </div>
                 <ul id="navbar" class="d-flex align-items-center gap-4 md_screen mb-0 flex-column flex-lg-row">
                     <li class="position-relative">
@@ -44,16 +45,16 @@
                         <a class="text-white fw-500 ff-Gilroy500 fs-xsm underline_nav border-end" href="">Contact Us</a>
                     </li>
                 </ul>
-                <div id="menubtn-icon" onclick="openNav()" class="d-lg-none z-3 pe-2 pt-2">
+                <div id="menubtn-icon" onclick="openNav()" class="d-lg-none z-3 pe-2 ">
                     <div class="line1"></div>
                     <div class="line2 my-2"></div>
                     <div class="line3"></div>
                 </div>
 
             </div>
-            <div class="d-flex align-items-center min-vh-100   flex-column justify-content-center">
-                <h2 class="text-white fs-xl fw-900 ff-Gilroy900 text-shadow">3D Product</h2>
-                <h2 class="text-white fs-xl fw-900 ff-Gilroy900 text-shadow">Animation</h2>
+            <div class="d-flex align-items-center min-vh-100 flex-grow-1  flex-column justify-content-center">
+                <h2 class="text-white fs-xl fw-900 ff-Gilroy900 text-shadow text-uppercase">3D Product</h2>
+                <h2 class="text-white fs-xl fw-900 ff-Gilroy900 text-shadow text-uppercase">Animation</h2>
             </div>
         </nav>
     </header>
@@ -89,15 +90,12 @@
                     <div class="pt-5">
                         <a class="btncont text-white " href="">Contact Us</a>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </section>
 
-    <section>
+    <section class="mb_100">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between pb-4">
 
@@ -125,29 +123,29 @@
             </div>
         </div>
         <div class="responsive mr">
-            <img class="ml-24" src="./assets/image/img1.png" alt="image">
-            <img class="ml-24" src="./assets/image/img2.png" alt="image">
-            <img class="ml-24" src="./assets/image/img3.png" alt="image">
-            <img class="ml-24" src="./assets/image/img4.png" alt="image">
-            <img class="ml-24" src="./assets/image/img1.png" alt="image">
-            <img class="ml-24" src="./assets/image/img2.png" alt="image">
-            <img class="ml-24" src="./assets/image/img3.png" alt="image">
-            <img class="ml-24" src="./assets/image/img4.png" alt="image">
+            <img src="./assets/image/img1.png" class="ml-24" alt="image">
+            <img src="./assets/image/img2.png" class="ml-24" alt="image">
+            <img src="./assets/image/img3.png" class="ml-24 " alt="image">
+            <img src="./assets/image/img4.png" class="ml-24 " alt="image">
+            <img src="./assets/image/img1.png" class="ml-24 " alt="image">
+            <img src="./assets/image/img2.png" class="ml-24" alt="image">
+            <img src="./assets/image/img3.png" class="ml-24 " alt="image">
+            <img src="./assets/image/img4.png" class="ml-24 " alt="image">
         </div>
     </section>
 
     <!-- section_3 -->
 
     <section class="mt-5 overflow-hidden">
-        <div class="gridsection">            
-                <img class="w-100" src="./assets/image/simg.png" alt="">            
+        <div class="gridsection">
+            <img class="w-100" src="./assets/image/simg.png" alt="">
             <div class=" bg_clr d-flex  flex-column align-items-center  justify-content-center position-relative">
                 <div class="pd16">
                     <h2 class="text-white fs-lg fw-900 ff-Gilroy900 text-uppercase max-w640 text-shadow">Sed volutpat
                         erat
                         dignissim
                         iaculis aenean</h2>
-                    <p class="text-white ff-Gilroy400 fs-xsm fw-400 max-w500 text-shadow">Tincidunt phasellus id
+                    <p class="text-white ff-Gilroy400 fs-xsm fw-400 max-w500 text-shadow pt-1">Tincidunt phasellus id
                         imperdiet lorem
                         blandit.
                         Congue donec scelerisque congue pellentesque massa porta vel donec dapibus. </p>
@@ -176,7 +174,7 @@
                     <h2 class="text_clr fs-lg fw-900 ff-Gilroy900 text-uppercase max-w640 text-shadow">At tempor, amet
                         viverra
                         eu Quisque</h2>
-                    <p class="text_clr ff-Gilroy400 fs-xsm fw-400 max-w500 text-shadow">Faucibus pulvinar enim in
+                    <p class="text_clr ff-Gilroy400 fs-xsm fw-400 max-w500 text-shadow pt-2">Faucibus pulvinar enim in
                         sagittis. Aliquam
                         libero dolor iaculis in aliquam. Cursus nibh enim sed et, mauris morbi. Faucibus viverra et diam
                         sit cursus. Pellentesque posuere. </p>
@@ -338,6 +336,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
 </body>
+
 </html>
 <script>
     $('.responsive').slick({
@@ -372,7 +371,7 @@
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1.5,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
